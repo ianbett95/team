@@ -14,25 +14,29 @@
 #section-title{
     text-align: center;
     margin: 10px 0px;
+    text-decoration: underline;
+    color: darkblue;
 }
 
+
 #team{
-    display: flex;
-    padding:0px 150px;
+    display: block;
+    
+    padding:0px 300px;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 150px;
 
 }
 .card{
-    width: 28%;
+    width: 100%;
     
     margin-bottom: 20px;
     
 
 }
 .card-pic{
-    height: 350px;
+    height: 100%;
     width: 100%;
     
     
@@ -55,4 +59,39 @@
 .card-role{
     font-style: italic;
     color: gray;
+}
+.card-socials{
+    display: flex;
+    
+
+}
+@media only screen and (min-width:768px) {
+    #team{
+        display: flex;
+        flex-direction: row;
+        padding:0px 150px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .card{
+        width: 28%;
+        height: 100%;
+        margin-bottom: 20px;
+        
+    }
+    .card-pic{
+        width: 350px;
+        height: 100%;
+        margin-bottom: 20px;
+        
+    }
+    .card-pic img{
+        height: 100%;
+        width:100%;
+        object-fit: contain;
+    }
+
+
+
+    
 }
